@@ -2,13 +2,14 @@ import type { Metadata } from "next";
 import { Sofadi_One } from "next/font/google";
 import "./globals.css";
 import { MantineProvider, createTheme } from "@mantine/core";
-import '@mantine/core/styles.css';
+import "@mantine/core/styles.css";
+import Header from "../components/Header/Header";
 
-const sofadi = Sofadi_One({ subsets: ["latin"], weight: '400' });
+const sofadi = Sofadi_One({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
-  title: "Robbie - Portfolio",
-  description: "Personal website to display portfolio and links",
+	title: "Robbie - Portfolio",
+	description: "Personal website to display portfolio and links",
 };
 
 // const theme = createTheme({
@@ -20,15 +21,18 @@ export const metadata: Metadata = {
 // });
 
 export default function RootLayout({
-  children,
+	children,
 }: Readonly<{
-  children: React.ReactNode;
+	children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body className={sofadi.className}>
-        <MantineProvider>{children}</MantineProvider>
-      </body>
-    </html>
-  );
+	return (
+		<html lang="en">
+			<body className={sofadi.className}>
+				<MantineProvider>
+					<Header />
+					{children}
+				</MantineProvider>
+			</body>
+		</html>
+	);
 }

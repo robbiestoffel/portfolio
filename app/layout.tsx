@@ -5,7 +5,7 @@ import { Kalam } from "next/font/google";
 import "./globals.css";
 import { MantineProvider } from "@mantine/core";
 import "@mantine/core/styles.css";
-import Header from "../components/Header/Header";
+import Header from "../components/Header";
 
 const sofadi = Sofadi_One({ subsets: ["latin"], weight: "400" });
 const ubuntu = Ubuntu({ subsets: ["latin"], weight: "400" });
@@ -25,7 +25,7 @@ export default function RootLayout({
 		<html lang="en">
 			<body className={sofadi.className}>
 				<MantineProvider defaultColorScheme="dark">
-					<div className='bg-brown-700'>
+					<div className='bg-brown-900'>
 						<Header />
 						{children}
 					</div>

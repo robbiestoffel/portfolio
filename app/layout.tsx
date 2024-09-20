@@ -1,24 +1,20 @@
 import type { Metadata } from "next";
 import { Sofadi_One } from "next/font/google";
+import { Ubuntu } from "next/font/google";
+import { Kalam } from "next/font/google";
 import "./globals.css";
-import { MantineProvider, createTheme } from "@mantine/core";
+import { MantineProvider } from "@mantine/core";
 import "@mantine/core/styles.css";
 import Header from "../components/Header/Header";
 
 const sofadi = Sofadi_One({ subsets: ["latin"], weight: "400" });
+const ubuntu = Ubuntu({ subsets: ["latin"], weight: "400" });
+const kalam = Kalam({ subsets: ["latin"], weight: "400" });
 
 export const metadata: Metadata = {
 	title: "Robbie - Portfolio",
 	description: "Personal website to display portfolio and links",
 };
-
-// const theme = createTheme({
-//   fontFamily: 'Sofadi One, cursive',
-//   headings: {
-//     fontFamily: 'Playpen Sans',
-//     fontWeight: '800',
-//   }
-// });
 
 export default function RootLayout({
 	children,
@@ -28,9 +24,11 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body className={sofadi.className}>
-				<MantineProvider>
-					<Header />
-					{children}
+				<MantineProvider defaultColorScheme="dark">
+					<div className='bg-brown-700'>
+						<Header />
+						{children}
+					</div>
 				</MantineProvider>
 			</body>
 		</html>

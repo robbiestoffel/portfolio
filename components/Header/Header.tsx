@@ -9,24 +9,24 @@ export default function Header() {
 
   const links: Links[] = [
     {link: '#about', label: 'About'},
-    {link: '#art', label: 'Art'},
-    {link: '#contact', label: 'Contact'},
+    {link: '#resume', label: 'Resume'},
+    {link: '#art', label: 'Art'}
   ]
 
   const items = links.map((link) => (
     <a
       key={link.label}
       href={link.link}
-      className='p-2'
+      className='p-2 text-xl hover:text-rose'
     >
       {link.label}
     </a>
   )) 
   
   return (
-    <div className='flex flex-row justify-between p-5 bg-zinc-900'>
+    <div className='flex flex-row justify-around p-5 bg-brown-900 text-stone'>
       <h1 className='text-2xl justify-center'>
-        Robbie <em>(they/them)</em>
+        Robbie <em className="text-xl">(they/them)</em>
       </h1>
       <div>
         {items}

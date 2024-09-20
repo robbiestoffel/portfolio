@@ -2,13 +2,13 @@ import { Text } from '@mantine/core';
 
 export default function Hero() {
   return (
-    <>
-      <h1 className='text-center mt-32 text-8xl font-extrabold'>
-        <Text inherit variant="gradient" component="span" gradient={{ from: '#52228D', to: '#6B218D ' }}>
+    <div className='my-24'>
+      <h1 className='text-center text-8xl font-kalam font-extrabold'>
+        <Text inherit variant="gradient" component="span" gradient={{ from: '#a8a29e', to: '#a8a29e' }}>
           Robbie Stoffel
         </Text>
       </h1>
-      <p className='text-center text-xl mx-auto mt-6'>
+      <p className='text-center text-xl mx-auto mt-6 text-stone'>
         ☾ actor • artist • nerd ☾
         <br />
         School of Science and Math , Durham NC , c/o '25
@@ -17,6 +17,6 @@ export default function Hero() {
         <br />
         Studio Art TA
       </p>
-    </>
+    </div>
   )
 }

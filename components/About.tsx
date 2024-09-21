@@ -2,12 +2,12 @@ import Image from "next/image";
 
 export default function About() {
 	return (
-		<div className="bg-brown-900 flex flex-row justify-around my-10 px-20">
+		<div className="bg-brown-900 flex flex-row justify-around py-20 px-20" id="about">
 			<Image
 				src="/profile.jpg"
 				height={600}
 				width={450}
-				className='h-400 w-300 m-10 border-2 border-slate-100'
+				className='h-400 w-300 m-10 border-2 border-slate-100 hiddem md:block'
 				alt="Picture of the Artist"
 			/>
 			<p className='p-10 text-xl'>

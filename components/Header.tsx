@@ -29,17 +29,23 @@ export default function Header() {
 	));
 
 	const artLinks: Links[] = [
-		{ link: "/art/", label: "Art" },
 		{ link: "/art/drawing", label: "Drawing" },
 		{ link: "/art/sketchbook", label: "Sketchbook" },
+		// { link: "/art/painting", label: "Photography" },
 		// { link: "/art/photography", label: "Photography" },
+		{ link: "/art/", label: "Art" },
 	];
 
 	const artItems = artLinks.map((link) => (
 		<Link
 			key={link.label}
 			href={link.link}
-			className="p-2 text-xl font-bold hover:text-rose-900"
+			className={clsx(
+				"p-2 text-xl font-bold hover:text-rose-900",
+				{
+					'text-brown-900 hover:text-rose-900 bg-stone-300 rounded-md': link.label === "Art" && pathname.slice(0, 4) === "/art"
+				}
+			)}
 		>
 			{link.label}
 		</Link>

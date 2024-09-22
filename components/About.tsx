@@ -7,10 +7,10 @@ export default function About() {
 				src="/profile.jpg"
 				height={600}
 				width={450}
-				className='h-400 w-300 m-10 border-2 border-stone-100 hidden md:block'
+				className='h-600px w-450 m-10 border-2 border-stone-100 hidden xl:block'
 				alt="Picture of the Artist"
 			/>
-			<p className='text-lg md:text-xl md:p-10'>
+			<p className='text-xl md:p-10'>
 				Robbie is from Mount Holly, North Carolina, just outside Charlotte. In
 				middle school, they took Visual Art three years in a row and Digital
 				Photography in eighth grade. When they entered high school, Robbie began

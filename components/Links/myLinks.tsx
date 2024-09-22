@@ -35,6 +35,14 @@ export const myLinks: LinkCardProps[] = [
 	{
 		name: 'Spotify',
 		link: 'https://open.spotify.com/user/l6bd654q0wankqq74ioeuf6dx?si=3fd5caf38d21494d',
+	},
+	{
+		name: 'Pronouns Page',
+		link: 'https://en.pronouns.page/@robbiestoffel',
+	},
+	{
+		name: 'Facebook',
+		link: 'https://www.facebook.com/robbiestoffel/',
 	}
 ];
 

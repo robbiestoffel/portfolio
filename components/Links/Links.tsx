@@ -29,24 +29,6 @@ export default function Links() {
 					))}
 				</Group>
 			</div>
-			{/* 
-
-      Find me:
-      main instagram
-      art instagram
-      github
-      gitlab
-      linkedin
-      spotify
-      pronouns page?
-      facebook?
-      
-
-      Contact Me:
-      email
-      whatsapp
-      discord
-      */}
 		</div>
 	);
 }

@@ -32,7 +32,7 @@ const config: Config = {
         950: '#4c0519',
       },
       'stone': {
-        100: '#f5f5f4',
+        100: '#d6d3d1',
         300: '#d6d3d1',
       },
       'dark': {

@@ -5,7 +5,7 @@ export default function Statement() {
 				<p className="text-4xl font-extrabold">2024 Artist Intentions</p>
 			</div>
 			<div className="bg-brown-900">
-				<p className="py-10 px-4 sm:px-10 lg:px-32 text-lg text-center">
+				<p className="py-10 px-4	 sm:px-12 lg:px-48 text-lg text-center">
 					My ‘overriding concept’ is the journey many transgender people embark
 					on in search of beauty. It is a journey I am still on, and one I will
 					explore in my artwork. Transgender people tend to be unhappy with

@@ -43,7 +43,19 @@ export default function Header() {
 			className={clsx(
 				"p-3 text-lg sm:text-xl font-bold hover:text-rose-900",
 				{
-					'text-brown-900 hover:text-rose-900 bg-stone-300 rounded-md': link.label === "My Art" && pathname.slice(0, 4) === "/art"
+					"text-brown-900 hover:text-rose-900 bg-stone-300 rounded-md":
+						link.label === "My Art" && pathname.slice(0, 4) === "/art",
+				},
+				{
+					"text-rose-900": link.label === "My Art" && pathname === "/art",
+				},
+				{
+					"text-rose-900":
+						link.label === "Drawing" && pathname === "/art/drawing",
+				},
+				{
+					"text-rose-900":
+						link.label === "Sketchbook" && pathname === "/art/sketchbook",
 				}
 			)}
 		>
@@ -59,7 +71,7 @@ export default function Header() {
 				</Link>
 				<div
 					className={clsx("", {
-						'hidden': pathname.slice(0, 4) != "/art"
+						hidden: pathname.slice(0, 4) != "/art",
 					})}
 				>
 					{artItems}

@@ -2,7 +2,7 @@ import Display from "../../../components/Art/display"
 
 export default function Page() {
   return(
-    <div className='pt-24 bg-brown-950'>
+    <div className='pt-24 bg-brown-950 place-content-around'>
       <Display
 				title="Lil Penguin"
 				medium="graphite on paper"

@@ -1,51 +1,50 @@
-import { Button, Tooltip } from "@mantine/core";
-import { useClipboard } from '@mantine/hooks';
-import { LinkCardProps } from "./LinkCard";
-
+// import { useClipboard } from '@mantine/hooks';
 // const clipboard = useClipboard({ timeout: 500 });
-const text: String = 'undefined';
+
+interface LinkCardProps {
+	name: string;
+	link: string;
+}
+
+interface ContactCardProps {
+	method: string,
+	address: string,
+}
 
 export const myLinks: LinkCardProps[] = [
 	{
-		name: (
-			<a href="https://www.instagram.com/robbiestoffel" target="_blank">
-				Main Instagram
-			</a>
-		),
+		name: 'Main Instagram',
+		link: 'https://www.instagram.com/robbiestoffel',
 	},
 	{
-		name: (
-			<a href="https://www.instagram.com/robbie.artistic" target="_blank">
-				Art Instagram
-			</a>
-		),
+		name: 'Art Instagram',
+		link: 'https://www.instagram.com/robbie.artistic',
 	},
 	{
-		name: (
-			<a href="https://github.com/robbiestoffel" target="_blank">
-				GitHub
-			</a>
-		),
+		name: 'GitHub',
+		link: 'https://github.com/robbiestoffel',
 	},
 	{
-		name: (
-			<a href="https://gitlab.com/robbiestoffel" target="_blank">
-				GitLab
-			</a>
-		),
+		name: 'GitLab',
+		link: 'https://gitlab.com/robbiestoffel',
 	},
 	{
-		name: (
-			<a href="https://www.linkedin.com/in/robbiestoffel/" target="_blank">
-				Linkedin
-			</a>
-		),
+		name: 'Linkedin',
+		link: 'https://www.linkedin.com/in/robbiestoffel/',
 	},
 	{
-		name: (
-			<a href="https://open.spotify.com/user/l6bd654q0wankqq74ioeuf6dx?si=3fd5caf38d21494d" target="_blank">
-				Spotify
-			</a>
-		)
+		name: 'Spotify',
+		link: 'https://open.spotify.com/user/l6bd654q0wankqq74ioeuf6dx?si=3fd5caf38d21494d',
 	}
 ];
+
+export const myContacts: ContactCardProps[] = [
+	{
+		method: 'Email',
+		address: 'stoffel25r@ncssm.edu',
+	},
+	{
+		method: 'Discord',
+		address: 'robbiestoffel',
+	}
+]

@@ -24,8 +24,8 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body className={sofadi.className}>
-				<MantineProvider defaultColorScheme="dark">
-					<div className='bg-rose-800'>
+				<MantineProvider>
+					<div className='bg-rose-950 text-stone-100'>
 						<Header />
 						{children}
 					</div>

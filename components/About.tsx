@@ -2,15 +2,15 @@ import Image from "next/image";
 
 export default function About() {
 	return (
-		<div className="bg-brown-900 flex flex-row justify-around py-20 px-20" id="about">
+		<div className="bg-brown-900 flex flex-row justify-around py-20 px-4 md:px-20" id="about">
 			<Image
 				src="/profile.jpg"
 				height={600}
 				width={450}
-				className='h-400 w-300 m-10 border-2 border-slate-100 hiddem md:block'
+				className='h-400 w-300 m-10 border-2 border-stone-100 hidden md:block'
 				alt="Picture of the Artist"
 			/>
-			<p className='p-10 text-xl'>
+			<p className='text-lg md:text-xl md:p-10'>
 				Robbie is from Mount Holly, North Carolina, just outside Charlotte. In
 				middle school, they took Visual Art three years in a row and Digital
 				Photography in eighth grade. When they entered high school, Robbie began
